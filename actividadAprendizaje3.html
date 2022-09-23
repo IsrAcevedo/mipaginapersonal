@@ -1,0 +1,183 @@
+    <!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="preload" href="css/normalice.css" as="style">
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>actividad de aprendizaje javascript</title>
+</head>
+
+<body>
+    <header>
+        <h1> israel acevedo <span> diseñador web</span></h1>  
+
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-pr contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mi</a>
+            <a href="#">Clentes</a>
+            <a href="#">Contacto</a>
+            <a href="sena.html">Actividades Sena</a>
+            
+             
+
+        </nav>
+    </div>
+    <h2>EJERCICIOS JAVASCRIPT DESARROLLADOS EN AMBIENTE DE APRENDIZAJE SENA</h2>
+    <div>
+        <table border cellpadding=100 cellspacing=0>
+            <tr>
+                <td>
+                    <H4>Ejercicio 1</H4>
+                    var number= [100,200,300];  <br>
+                    console.log(number[0]); <br>
+                    for (let index = 0; index < number.length; index++) {<br>
+                    console.log(number[index]);}
+                </td>
+                <td>
+                    <H4>Ejercicio 2</H4>
+                    var edades = [10,100,500];<br>
+                    var suma = edades[0]+edades[1]; <br>
+                    console.log(suma);
+                </td>
+                <td>
+                    <H4>Ejercicio 3</H4>
+                    var numer=[120,80,300,556]; <br>
+                    var suma= numer[0]+numer[1]+numer[2]+numer[3];<br>
+                    console.log(suma);
+                </td>
+            
+            </tr>
+            <tr>    
+                <td>
+                    <H4>Ejercicio 4</H4>
+                    var coche = {
+                        color : 'white',
+                        marca :'ford',
+                        modelo: 'mustang'
+                    } <br>
+                    
+                    var micoche = 'mi coche es de la marca '+ coche.marca; <br>
+                    
+                    console.log(micoche);
+                </td>
+
+                <td>
+                    <H4>Ejercicio 5</H4>
+
+                    var estudiante = [ {nombre : "george", correo : 'georgesena@gmail.com', edad : '24'}, <br>
+                    {nombre : "lucas", correo : 'glucassena@gmail.com', edad : '25'}]; <br>
+
+                    console.log(estudiante[0]); <br>
+
+                    console.log(estudiante[1].correo); <br>
+                </td>
+
+                <td>
+                    <H4>Ejercicio 6</H4>
+                        var personas =[ {nombre : "danel", correo : 'gadanel@gmail.com', edad : '24'}, <br>
+                        {nombre : "tatiana", correo : 'tatianasena@gmail.com', edad : '25'},<br>
+                        {nombre : "james", correo : 'jamesna@gmail.com', edad : '34'},<br>
+                        {nombre : "mateo", correo : 'matiu@gmail.com', edad : '23'},<br>
+                        {nombre : "miguel", correo : 'migue22856@gmail.com', edad : '22'}]<br>
+
+                        var CorreoEst =[personas[0].correo,personas[1].correo, <br> personas[2].correo,personas[3].correo,personas[4].correo,]<br>
+
+                        for (let index = 0; index < CorreoEst.length; index++) {<br>
+                            console.log(CorreoEst[index])}
+
+                </td>
+           
+
+            </tr>  
+            
+            <tr>
+
+                <td>
+                    <H4>Ejercicio 7</H4>
+                    let colores = ["verde", "rojo", "azul","amarillo", "naranja"]; <br>
+                    let guardaColor = colores[2]; <br>
+                    console.log(guardaColor);
+                </td>
+                <td>
+                    <H4>Ejercicio 8</H4>
+                    let colores = ["verde", "rojo", "azul","amarillo", "naranja"]; <br>
+                    console.log(colores[0][0]);
+
+                </td>
+                <td>
+                    <H4>Ejercicio 9</H4>
+                    let colores = ["verde", "rojo", "azul","amarillo", "naranja"]; <br>
+                    console.log(colores[0].charAt(0)); 
+
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Ejercicio 10</h4>
+                    let nombre = "Programación" + " Fácil."; <br>
+                    let saludo = "Os doy la bienvenida a ";  <br>
+                    let fraseCompleta = saludo + nombre; <br>
+                    console.log(fraseCompleta);
+                </td>
+                <td>
+                    <h4>Ejercicio 11</h4>
+                    let frase =["pocisiones", "se cuentan", "las", "array","cero", "apartir","del"]; <br>
+
+                    let concatenaFrase = frase[2] +" "+frase[0]+" "+ frase[6]+" "+ frase[3]+  <br> " "+ frase[1]+" "+ 
+                    frase[5]+" "+ frase[6]+" "+ frase[4]; <br>
+
+                    console.log(concatenaFrase);
+                                    </td>
+                <td>
+                    <h4>Ejercicio 12</h4>
+                    let frase = "javascript "  + " es un lenguaje "+ " esencial para crear "+ " sitios web poderosos ";
+                    console.log(frase); 
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <h4>Ejercicio 13</h4>
+                    let numeroString1 = "10"; <br>
+                    let numeroString2= "20"; <br>
+                    let numeroString3 = "30" <br>
+
+                    let concatenaNumeros = numeroString1 + numeroString2 + numeroString3; <br>
+                    console.log(concatenaNumeros);    
+                </td>
+                <td>
+                    <h4>Ejercicio 14</h4>
+                    let multiplicacion = 10**5; <br>
+
+                    console.log(multiplicacion);
+                </td>
+                <td>
+                    <h4>Ejercicio 15</h4>
+                    let numero1 = 57409; <br>
+                    let numero2 = 16789; <br>
+                    let calculaResiduo = numero1 % numero2; <br>
+
+                    console.log(calculaResiduo); 
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>    
+
+
+
+
