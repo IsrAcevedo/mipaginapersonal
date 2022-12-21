@@ -6,6 +6,7 @@
     --secundario: #0097A7;
     --gris: #757575;
     --grisclaro: #dfe9f3;
+    
 }
 
 html{
@@ -29,7 +30,8 @@ html{
     -webkit-box-shadow: 9px 10px 14px -3px rgba(53,54,61,1);
     -moz-box-shadow: 9px 10px 14px -3px rgba(53,54,61,1);
     box-shadow: 9px 10px 14px -3px rgba(53,54,61,1);
-    background-color: var(--blanco);
+    /* background-color: var(--blanco); */
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 70%   );
     padding: 2rem;
     border-radius: 2rem;
 }
@@ -122,8 +124,12 @@ span{
 
     background-color: var(--secundario);
    
+    
 
 }
+
+
+
 .navegacion-pr {
 
     
@@ -222,6 +228,15 @@ span{
 
  }
 
+ .proyectos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--grisclaro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+ }
  .formulario{
 
     background-color: var(--gris);
@@ -296,4 +311,6 @@ span{
  .footer{
 
     text-align: center  ;
+    padding: 3rem;
+    font-size: 2.5rem;
  }
