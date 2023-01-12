@@ -35,6 +35,119 @@ html{
     padding: 2rem;
     border-radius: 2rem;
 }
+.header{
+    background-color: rgba(0, 0, 0,0.4);
+
+}
+
+.header_Content{
+    
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10rem;
+    margin-right: 3rem;
+    
+}
+
+@media (max-width: 480px) {
+    .header_Content{
+
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+
+    } 
+
+
+    
+}
+
+
+.header h1{
+
+    font-size: 2.8rem;
+    padding: 0rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    
+}
+
+.header span{
+    font-size: 1.8rem;
+    text-transform: lowercase;
+}
+
+.content_contact{
+
+    display: flex;
+    gap: 5rem;
+    color: #E1306C;
+}
+
+@media (max-width: 480px) {
+    .content_contact{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        gap: 0.1rem;
+
+    } 
+
+
+    
+}
+
+.ico-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon-fa{
+    background-color: #3b5998;
+    border-radius: 30%;
+    padding: 0.5rem;
+}
+.icon-fa:hover{
+    padding: 0.8rem;
+}
+
+.icon-tw{
+    background-color:#00acee ;
+    border-radius: 30%;
+    padding: 0.5rem;
+}
+.icon-ins{
+    background-color:#E1306C;
+    border-radius: 30%;
+    padding: 0.5rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact_ico{
+    border-radius: 50%;
+    background-color: var(--primario);
+    padding: 1rem;
+}
+
+
 body{
 
     font-size: 16px; /* 1rem = 10px*/
@@ -228,15 +341,65 @@ span{
 
  }
 
- .proyectos{
-    height: 15rem;
-    width: 15rem;
-    background-color: var(--grisclaro);
+ .misProyectos{
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10%;
+    flex-direction: column;
+    
+    
  }
+
+ .misProyectos p{
+    font-size: 2rem;
+   margin-left: 2rem;
+   margin-right: 3rem;
+   font-size-adjust: unset;
+ }
+ @media (min-width: 1180px) { 
+    .misProyectos{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+     }
+
+
+ }
+
+
+ #py1{
+    background-image: url(../mg/pgcctv.jpg);
+ }
+
+
+ #py2{
+    background-image: url(../mg/pgws.jpg);
+    background-position: center
+    
+    
+ }
+ #py3{
+    background-image: url(../mg/pgdp.jpg);
+ }
+
+ .proyecto{
+    height: 50rem;
+    width: 80rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%;
+    overflow: hidden;
+ }
+
+ @media (min-width: 1180px) { 
+   
+    .proyecto{
+       height: 30rem;
+       width: 55rem;
+    }
+}
+
+
  .formulario{
 
     background-color: var(--gris);
