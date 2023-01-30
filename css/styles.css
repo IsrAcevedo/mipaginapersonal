@@ -23,6 +23,37 @@ html{
     box-sizing: inherit;
 }
 
+body{
+
+    font-size: 16px; /* 1rem = 10px*/
+    font-family: 'Titillium Web', sans-serif;
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%   );
+}
+
+h1{
+
+    
+    font-size: 4.8rem;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+
+    font-size: 1.8rem;    
+}
+
+
+h1,h2,h3{
+    text-align: center;
+
+}
+h1 span{
+    font-size: 2.8rem;
+    text-transform: capitalize;
+}
 
 
 .sombra{
@@ -48,7 +79,15 @@ html{
     align-items: center;
     margin-left: 10rem;
     margin-right: 3rem;
-    
+    color: #E1306C;
+   
+}
+.header_Content a{
+    text-decoration: none;
+    color: #E1306C;
+}
+.header_Content a h4:hover{
+   transform: scale(1.3);
 }
 
 @media (max-width: 480px) {
@@ -63,6 +102,7 @@ html{
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
+        color: #E1306C;
 
     } 
 
@@ -70,30 +110,6 @@ html{
     
 }
 
-
-.header h1{
-
-    font-size: 2.8rem;
-    padding: 0rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    
-    text-transform: uppercase;
-    
-}
-@media (min-width: 768px) {
-    .header h1{
-        margin-left: -8rem;
-    } 
-
-
-    
-}
-
-.header span{
-    font-size: 1.8rem;
-    text-transform: lowercase;
-}
 
 .content_contact{
 
@@ -117,6 +133,23 @@ html{
     
 }
 
+.info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: grab;
+}
+.info:hover{
+    transform: translate(1rem);
+}
+.contact_ico{
+    border-radius: 50%;
+    background-color: var(--primario);
+    padding: 1rem;
+}
+
+
+
 .ico-redes{
     display: flex;
     justify-content: center;
@@ -130,7 +163,8 @@ html{
     padding: 0.5rem;
 }
 .icon-fa:hover{
-    padding: 0.8rem;
+    transform: rotate(-45deg);
+    transition-duration: 300ms;
 }
 
 .icon-tw{
@@ -138,110 +172,25 @@ html{
     border-radius: 30%;
     padding: 0.5rem;
 }
+.icon-tw:hover{
+    transform: rotate(-45deg);
+    transition-duration: 300ms;
+}
 .icon-ins{
     background-color:#E1306C;
     border-radius: 30%;
     padding: 0.5rem;
 }
-
-.info{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.contact_ico{
-    border-radius: 50%;
-    background-color: var(--primario);
-    padding: 1rem;
+.icon-ins:hover{
+    transform: rotate(-45deg);
+    transition-duration: 300ms;
 }
 
 
-body{
-
-    font-size: 16px; /* 1rem = 10px*/
-    font-family: 'Titillium Web', sans-serif;
-    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%   );
-}
-
-h1{
-
-    
-    font-size: 3.8rem;
-}
-h2{
-    font-size: 2.8rem;
-}
-
-h3{
-
-    font-size: 1.8rem;    
-}
-
-h1,h2,h3{
-    text-align: center;
-
-}
-span{
-
-    font-size: 2rem;
-}
-.contenedor{
-
-    max-width: 120rem;
-   margin: 0 auto;
-}
-
-.boton{
-
-    background-color: var(--secundario);
-    color: var(--blanco);
-    padding: 1rem 3rem ;
-    margin-top: 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 10rem;
-    width:  70%;
-    text-align: center;
-    border: none;
-}
 
 
-@media (min-width: 480px) {
-    .boton{
-
-        width: auto;
-    } 
-    
- }
-
- .boton:hover{
-
-    cursor: pointer;
- }
 
 
-.w-sm-100{
-
-    width: 100%;
-}
-
-@media (min-width: 480px) { 
-     .w-sm-100{
-        width: auto;
-     }
- }
-
-.alinear-boton{
-    justify-content: flex-end;
-}
-
-.flex{
-
-    display: flex;
-}
 .nav-bg{
 
     background-color: var(--secundario);
@@ -310,6 +259,69 @@ span{
     justify-content: center;
 
  }
+
+ .contenido-hero a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+ }
+
+.contenedor{
+
+    max-width: 120rem;
+   margin: 0 auto;
+}
+
+.boton{
+
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem ;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10rem;
+    width:  70%;
+    text-align: center;
+    border: none;
+}
+
+
+@media (min-width: 480px) {
+    .boton{
+
+        width: auto;
+    } 
+    
+ }
+
+ .boton:hover{
+
+    cursor: pointer;
+ }
+
+
+.w-sm-100{
+
+    width: 100%;
+}
+
+@media (min-width: 480px) { 
+     .w-sm-100{
+        width: auto;
+     }
+ }
+
+.alinear-boton{
+    justify-content: flex-end;
+}
+
+.flex{
+
+    display: flex;
+}
 @media (min-width: 768px) { 
     .servicios{
 
@@ -383,13 +395,39 @@ span{
 
  #py2{
     background-image: url(../mg/pgws.jpg);
-    background-position: center
+    
     
     
  }
  #py3{
     background-image: url(../mg/pgdp.jpg);
  }
+ 
+
+#py4{
+   background-image: url(../mg/pgme.png);
+}
+
+#py1,#py2,#py3,#py4{
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 768px) { 
+    #py1,#py2,#py3,#py4{
+        max-width: 75rem;
+    }
+   
+}
+
+@media (max-width: 480px) { 
+    #py1,#py2,#py3,#py4{
+        width: 40rem;
+        background-size: contain;
+        height: 25rem;
+    }
+   
+}
+
 
  .proyecto{
     height: 50rem;
@@ -400,12 +438,18 @@ span{
     overflow: hidden;
  }
 
+
+
  @media (min-width: 1180px) { 
    
     .proyecto{
        height: 30rem;
        width: 55rem;
     }
+    
+     .proyecto:hover{
+    transform: scale(1.1);
+ }
 }
 
 
