@@ -226,6 +226,10 @@ h1 span{
     font-weight: bold;
 }
 
+.dropdown-item{
+    padding: 0.5rem !important;
+}
+
 .navegacion-pr a:hover{
 
     background-color: var(--primario);
@@ -530,3 +534,37 @@ h1 span{
     padding: 3rem;
     font-size: 2.5rem;
  }
+
+ /* pagina sobre mi */
+
+ .fst{
+    font-size: 2rem;
+ }
+
+ @media (min-width: 1280px) { 
+      
+    .fst{
+        font-size: 2.4rem;
+     }
+  }
+
+  @media (max-width: 1080px) { 
+      
+    .fst{
+        font-size: 1.5rem;
+     }
+  }
+
+
+   /* pagina servicios */
+
+   .card-body{
+    min-height: 250px !important;
+   }
+
+   .card img:hover{
+    
+    transition-property: transform;
+    transform: scale(1.2);
+    transition: 0.3ms;
+   }

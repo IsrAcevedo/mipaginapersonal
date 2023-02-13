@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
@@ -96,11 +97,21 @@
 
     <div class="nav-bg">
         <nav class="navegacion-pr contenedor">
-            <a href="#hero">Inicio</a>
-            <a href="#sobreMI">Sobre mi</a>
-            <!-- <a href="#">Clientes</a> -->
-            <a href="#contacto">Contacto</a>
-            <a href="#proyectos">ProyectosWeb</a>
+            <a href="index.html">Inicio</a>
+            <a href="sobremi.html">Sobre mi</a>
+            <a href="servicios.html" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                <ul class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="servicios.html#diseñoweb">Diseño web</a></li>
+                    <li><a class="dropdown-item" href="servicios.html#marketing">Marketing Digital</a></li>
+                    <li><a class="dropdown-item" href="servicios.html#desarrolloweb">Desarrollo web</a></li>
+                    <li><a class="dropdown-item" href="servicios.html#mantenimientoweb">Mantenimiento Web</a></li>
+                    <li><a class="dropdown-item" href="servicios.html#camaras">Sistemas de Seguridad</a></li>
+                    <li><a class="dropdown-item" href="servicios.htmlappmovil">Aplicaciones Moviles</a></li>
+                    <li><a class="dropdown-item" href="servicios.html#mantenimientopc">Mantenimiento PC</a></li> 
+                    <li><a class="dropdown-item" href="servicios.html#soportetec">Soporte Tecnico</a></li>
+              </ul>
+            <a href="contacto.html">Contacto</a>
+            <a href="proyectos.html">ProyectosWeb</a>
             
              
 
@@ -109,7 +120,7 @@
       
     <section class="hero" id="hero">
         <div class="contenido-hero">
-            <h1> Israel Acevedo <BR><span>  Diseño y Desarrollo Web</span> </h1> 
+            <h1> Israel Acevedo <BR><span>Camaras de Seguridad y Diseño Web</span> </h1> 
             
             <p>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="72" height="72" viewBox="0 0 24 24" stroke-width="2" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -253,102 +264,7 @@
 
         
         </div>
-   
 
-        <hr>
-        <hr>
-
-        <h2 id="proyectos">Mis Proyectos</h2>
-        <div class="misProyectos">
-            <section class="servicio">
-                <h3>MINIBAR EL SEPARADOR</h3></a>
-                <a href="https://minibarelseparador.netlify.app/" target="_blank">
-                    <div class="proyecto" id="py4">
-            
-                    </div>  
-                 </a>
-                <p>Sitio Web con tienda online integrada para la exibicion y venta de bebidas alcoholicas en MiniBar el SEPARADOR, la pagina fue desarrollada utilizando framework boostrap</p>  
-            </section> 
-            <section class="servicio">
-                <h3>CCTV</h3></a>
-                <a href="https://israelacevedocctv.netlify.app" target="_blank">
-                    <div class="proyecto" id="py1">
-            
-                    </div>  
-                 </a>
-                <p> Portafolio de servicios de personal encargado de instalar y hacer mantenimiento a CCTV. la pagina fue desarrolla con Bootstrap y SCSS</p>  
-            </section> 
-
-            
-
-            <section class="servicio">
-                <h3>Delicias Polca</h3>
-                <a href="https://deliciaspolca.netlify.app" target="_blank">
-
-                    <div class="proyecto" id="py3">
-                        
-
-                    </div>   
-                </a>
-
-                <p>Pagina diseñada en HTML y CSS con el proposito de publicar productos de reposteria del emprendimiento DELICIAS POLCA</p>
-
-        
-            </section>
-            <section class="servicio">
-                <h3>Reto Wordskill2022</h3>
-                <a href="https://wordskillarauca2022.netlify.app" target="_blank">
-                    <div class="proyecto" id="py2">
-                    
-                    </div>  
-                </a>
-
-                <p>reto o competencia wordskill que consistia en desarrollar pagina web con JavaScript, HTML y CSS</p>
-            </section>
-
-   
-        </div>
-        <hr>
-        <section id="contacto">
-            <h2>contacto</h2>
-            <!--  -->
-            <form class="formulario" action="https://formsubmit.co/9d3a51aaa6e0e06dd59e2577ab34aad5" method="post">
-                <fieldset>
-                    <legend>llene todos los campos</legend>
-                    <div class="contenedor-campos">
-                        <div class="campos">
-                            <label >Nombre</label>
-                            <input type="text" placeholder="tu nombre" name="name" required>
-                        </div>
-
-                        <div class="campos">
-                            <label >telefono</label>
-                            <input type="tel" placeholder="tu telefono" name="phone" required>
-                        </div>
-
-                        <div class="campos">
-                            <label >correo</label>
-                            <input type="email" placeholder="example@hotmail.com" name="email" required>
-                        </div>
-
-                        <div class="campos">
-                            <label >mensaje</label>
-                            <textarea name="asunto" required></textarea>
-                        </div>
-
-                    </div>
-                        
-                    <div class="alinear-boton flex">  
-                        <input class="boton w-sm-100" type="submit" value="enviar">
-                    </div>  
-
-                </fieldset>
-                <input type="hidden" name="_next" value="https://israelacevedo.netlify.app/">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-            </form>
-        </section>
-        
     </main>
     
     <footer class="footer">
@@ -357,5 +273,6 @@
 
     <script src="js/script.js"></script>
     <div id="sfcytdux8p6qgbawp549sayel3d6w6egsgt"></div><script type="text/javascript" src="https://counter6.optistats.ovh/private/counter.js?c=ytdux8p6qgbawp549sayel3d6w6egsgt&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas para blog"><img src="https://counter6.optistats.ovh/private/contadorvisitasgratis.php?c=ytdux8p6qgbawp549sayel3d6w6egsgt" border="0" title="contador de visitas para blog" alt="contador de visitas para blog"></a></noscript>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
