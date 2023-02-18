@@ -242,7 +242,7 @@ h1 span{
 
 .hero{
 
-    background-image: url(../mg/lg4.jpg);
+    background-image: url(../mg/lg4.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -409,7 +409,7 @@ h1 span{
  
 
 #py4{
-   background-image: url(../mg/pgme.png);
+   background-image: url(../mg/pgme.webp);
 }
 
 #py1,#py2,#py3,#py4{
